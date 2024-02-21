@@ -7,43 +7,43 @@ class Producto:
         pass
 
 class Libro(Producto):
-    def __init__(self, titulo, autor, genero):
+    def __init__(self, titulo, autor):
         super().__init__(titulo, autor)
-        self.genero = genero
+  
     
     def mostrar_producto(self):
-        return f"Título: {self.titulo}, Autor: {self.autor}, Género: {self.genero}"
+        return f"Título: {self.titulo}, Autor: {self.autor}"
 
 class Pelicula(Producto):
-    def __init__(self, titulo, autor, director):
+    def __init__(self, titulo, autor):
         super().__init__(titulo, autor)
-        self.director = director
+     
     
     def mostrar_producto(self):
-        return f"Título: {self.titulo}, Autor: {self.autor}, Director: {self.director}"
+        return f"Título: {self.titulo}, Autor: {self.autor}"
 
 class Disco(Producto):
-    def __init__(self, titulo, autor, artista):
+    def __init__(self, titulo, autor):
         super().__init__(titulo, autor)
-        self.artista = artista
+    
     
     def mostrar_producto(self):
-        return f"Título: {self.titulo}, Autor: {self.autor}, Artista: {self.artista}"
+        return f"Título: {self.titulo}, Autor: {self.autor},"
 
 # Instancias de libros
-libro1 = Libro("Harry Potter y la Piedra Filosofal", "J.K. Rowling", "Fantasía")
-libro2 = Libro("Cien años de soledad", "Gabriel García Márquez", "Realismo mágico")
-libro3 = Libro("1984", "George Orwell", "Ciencia ficción")
+libro1 = Libro("Harry Potter y la Piedra Filosofal", "J.K. Rowling")
+libro2 = Libro("Cien años de soledad", "Gabriel García Márquez")
+libro3 = Libro("1984", "George Orwell")
 
 # Instancias de películas
-pelicula1 = Pelicula("El Padrino", "Mario Puzo", "Francis Ford Coppola")
-pelicula2 = Pelicula("La La Land", "Damien Chazelle", "Damien Chazelle")
-pelicula3 = Pelicula("Parasite", "Bong Joon-ho", "Bong Joon-ho")
+pelicula1 = Pelicula("El Padrino", "Mario Puzo")
+pelicula2 = Pelicula("La La Land", "Damien Chazelle")
+pelicula3 = Pelicula("Parasite", "Bong Joon-ho")
 
 # Instancias de discos
-disco1 = Disco("Thriller", "Michael Jackson", "Michael Jackson")
-disco2 = Disco("Dark Side of the Moon", "Pink Floyd", "Pink Floyd")
-disco3 = Disco("Back in Black", "AC/DC", "AC/DC")
+disco1 = Disco("Thriller", "Michael Jackson")
+disco2 = Disco("Dark Side of the Moon", "Pink Floyd")
+disco3 = Disco("Back in Black", "AC/DC")
 
 # Mostrar información de cada producto
 print("Libros:")
